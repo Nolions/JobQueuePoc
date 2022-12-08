@@ -36,7 +36,7 @@ func main() {
 	log.Info().Msgf("(%s) version: %s", conf.Project, version)
 
 	jobQueue.Run()
-	httpSrv := api.New(conf.Project, conf.App, conf.Api, conf.Redis, conf.DB)
+	httpSrv := api.New(conf.Project, conf.App, conf.Redis, conf.DB)
 	httpSrv.Run()
 
 	wg := sync.WaitGroup{}

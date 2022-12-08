@@ -18,8 +18,8 @@ type Server struct {
 	handler    Handler
 }
 
-func New(cachePrefix string, appConf config.App, apiConf config.Api, redisConf redis.Config, dbConf db.Config) *Server {
-	handler := newHandler(cachePrefix, appConf, apiConf, redisConf, dbConf)
+func New(cachePrefix string, appConf config.App, redisConf redis.Config, dbConf db.Config) *Server {
+	handler := newHandler(cachePrefix, appConf, redisConf, dbConf)
 
 	e := engine(appConf.Mode)
 

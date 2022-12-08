@@ -14,7 +14,7 @@ type Handler struct {
 	CachePrefix string
 }
 
-func newHandler(cachePrefix string, appConf config.App, configApi config.Api, redisConf redis.Config, dbConf db.Config) Handler {
+func newHandler(cachePrefix string, appConf config.App, redisConf redis.Config, dbConf db.Config) Handler {
 	d, err := db.New(dbConf)
 	if appConf.Mode == gin.DebugMode || appConf.Mode == gin.TestMode {
 		d.ShowSQL()
