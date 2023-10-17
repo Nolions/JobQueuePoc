@@ -3,12 +3,13 @@ module github.com/Nolions/jobQueuePoc
 go 1.19
 
 require (
+	github.com/Nolions/wraperr v1.0.1
 	github.com/gin-gonic/gin v1.8.1
 	github.com/go-playground/validator/v10 v10.10.0
 	github.com/redpkg/formula v1.1.1
 	github.com/spf13/viper v1.13.0
 	github.com/stretchr/testify v1.8.0
-	gitlab.com/ht-co/wraperr v1.0.1
+	golang.org/x/net v0.0.0-20220520000938-2e3eb7b945c2
 )
 
 require (
@@ -45,7 +46,6 @@ require (
 	go.opentelemetry.io/otel v0.7.0 // indirect
 	golang.org/x/crypto v0.0.0-20220411220226-7b82a4e95df4 // indirect
 	golang.org/x/exp v0.0.0-20200513190911-00229845015e // indirect
-	golang.org/x/net v0.0.0-20220520000938-2e3eb7b945c2 // indirect
 	golang.org/x/sys v0.0.0-20220520151302-bc2c85ada10a // indirect
 	golang.org/x/text v0.3.7 // indirect
 	google.golang.org/grpc v1.46.2 // indirect
@@ -56,3 +56,5 @@ require (
 	xorm.io/builder v0.3.7 // indirect
 	xorm.io/xorm v1.0.3 // indirect
 )
+
+//replace github.com/Nolions/wraperr => github.com/Nolions/wraperr.git v1.0.1

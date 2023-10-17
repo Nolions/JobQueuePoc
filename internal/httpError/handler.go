@@ -1,11 +1,11 @@
 package httpError
 
 import (
+	"github.com/Nolions/wraperr"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"
-	"gitlab.com/ht-co/wraperr"
 )
 
 type HandlerFunc func(c *gin.Context) error
